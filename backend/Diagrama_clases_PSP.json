@@ -1,0 +1,425 @@
+{
+  "tables": [
+    {
+      "id": "qnf0G2FkoID3CPZdyxvWn",
+      "name": "usuario",
+      "x": 0,
+      "y": 0,
+      "locked": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "09FFIhGLKddmNflKwMjbG"
+        },
+        {
+          "id": "rW4yi0luyoF_JxRtDwIYU",
+          "name": "correo",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 100
+        },
+        {
+          "id": "h2kpRJ8hMbmDNOPABhNR4",
+          "name": "nombre",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 25
+        },
+        {
+          "id": "ZIK9Ydy5OyV5EF1OaD2hj",
+          "name": "apellidos",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 40
+        },
+        {
+          "id": "Iov-d7LSY9RNMrEFTbIv6",
+          "name": "username",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 65535
+        },
+        {
+          "id": "px08UCysSm6kPRqFVWXnS",
+          "name": "tipo_id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "zcTlaRLyyonV4-ViTkgH7",
+      "name": "tipo_usuario",
+      "x": 499.55560302734364,
+      "y": 266.6666870117188,
+      "locked": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "EtOemEMOFryAtqu3waY0G"
+        },
+        {
+          "id": "zAP4fmXC58dR8V4LcdHY9",
+          "name": "nombre",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 15
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "J7mlBDDUGGxLN7hHyL2WN",
+      "name": "tarea",
+      "x": -431.1112060546875,
+      "y": 134.22215779622417,
+      "locked": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "lQrKapaCPW8BOlRioZzcu"
+        },
+        {
+          "id": "1JXObgO0sNwXJpV2G4bps",
+          "name": "descripcion",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 500
+        },
+        {
+          "id": "hLD9xv7V_5qIMnPkexCum",
+          "name": "duracion",
+          "type": "INTEGER",
+          "default": "0",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "La duración debe ser en minutos",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "t7HZE0hLyQfkU6SEA0slW",
+          "name": "usuario_id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "I4JxSMH6MQnwDNYb69RKO",
+          "name": "etapa_id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "vo611af_fUelso4FQEh79",
+          "name": "interrupcion_id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "2TdbbVS-sejqtGQQJHqIo",
+          "name": "finalizacion_id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "vklWHaC8ZzirGh9qZqX84",
+      "name": "interrupcion",
+      "x": 183.9645721995035,
+      "y": 525.8053710060121,
+      "locked": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "JnmWrM9B5TaiGoezs60TR"
+        },
+        {
+          "id": "RpBO9bQ5dpLfSIB6ztbny",
+          "name": "duracion",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "pQqM-cdImYAoyOoRcoC56",
+          "name": "motivo",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 250
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "mp6ahJJEk0Ma0GZsN4hX4",
+      "name": "finalizacion",
+      "x": 107.8567905069986,
+      "y": 708.5662580337527,
+      "locked": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "sMt57wJAL0jdZp_CJ9FUA"
+        },
+        {
+          "id": "3zAQdKJ_cZotyxLG2-eNW",
+          "name": "duracion",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "Es la duración total de la tarea",
+          "size": "",
+          "values": []
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "B1exCyARrUBj6lT70XJvD",
+      "name": "etapa",
+      "x": 117.04350411860156,
+      "y": 292.23054849624634,
+      "locked": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "YN5kfuxD8ZK2wOkc2gJxu"
+        },
+        {
+          "id": "1peSdRLklCnJIcODp8zFz",
+          "name": "descripcion",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "",
+          "size": 10
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    }
+  ],
+  "relationships": [
+    {
+      "startTableId": "qnf0G2FkoID3CPZdyxvWn",
+      "startFieldId": "px08UCysSm6kPRqFVWXnS",
+      "endTableId": "zcTlaRLyyonV4-ViTkgH7",
+      "endFieldId": "EtOemEMOFryAtqu3waY0G",
+      "cardinality": "one_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_usuario_tipo_id_tipo_usuario",
+      "id": 0
+    },
+    {
+      "startTableId": "J7mlBDDUGGxLN7hHyL2WN",
+      "startFieldId": "t7HZE0hLyQfkU6SEA0slW",
+      "endTableId": "qnf0G2FkoID3CPZdyxvWn",
+      "endFieldId": "09FFIhGLKddmNflKwMjbG",
+      "cardinality": "one_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_tarea_usuario_id_usuario",
+      "id": 1
+    },
+    {
+      "startTableId": "J7mlBDDUGGxLN7hHyL2WN",
+      "startFieldId": "vo611af_fUelso4FQEh79",
+      "endTableId": "vklWHaC8ZzirGh9qZqX84",
+      "endFieldId": "JnmWrM9B5TaiGoezs60TR",
+      "cardinality": "one_to_many",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_tarea_interrupcion_id_interrupcion",
+      "id": 2
+    },
+    {
+      "startTableId": "J7mlBDDUGGxLN7hHyL2WN",
+      "startFieldId": "2TdbbVS-sejqtGQQJHqIo",
+      "endTableId": "mp6ahJJEk0Ma0GZsN4hX4",
+      "endFieldId": "sMt57wJAL0jdZp_CJ9FUA",
+      "cardinality": "one_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_tarea_finalizacion_id_finalizacion",
+      "id": 3
+    },
+    {
+      "startTableId": "J7mlBDDUGGxLN7hHyL2WN",
+      "startFieldId": "I4JxSMH6MQnwDNYb69RKO",
+      "endTableId": "B1exCyARrUBj6lT70XJvD",
+      "endFieldId": "YN5kfuxD8ZK2wOkc2gJxu",
+      "cardinality": "one_to_one",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "name": "fk_tarea_etapa_id_etapa",
+      "id": 4
+    }
+  ],
+  "notes": [],
+  "subjectAreas": [],
+  "database": "sqlite",
+  "title": "Untitled Diagram"
+}
