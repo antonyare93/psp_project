@@ -12,5 +12,5 @@ def get_users(
     Entrega una lista de usuarios con paginacion y todas sus propiedades
     """
     # Pendiente de implementar
-    return {"message": "Hello World"}
+    return {"message": "hola"}
 
