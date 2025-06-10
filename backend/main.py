@@ -13,4 +13,6 @@ def get_users(
     """
     # Pendiente de implementar
     return {"message": "hola"}
-
+    from fastapi import FastAPI
+app = FastAPI()
+@app.get("/usuarios")def get_usuarios():    return {"usuarios": ["Antony", "andres", "marco", "sergio"]}
