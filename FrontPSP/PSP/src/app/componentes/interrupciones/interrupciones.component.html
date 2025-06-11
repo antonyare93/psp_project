@@ -1,0 +1,48 @@
+<p-card styleClass="form-card">
+  <ng-template pTemplate="header">
+    <div class="form-header">⛔ Registrar Interrupción</div>
+  </ng-template>
+
+  <div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col-12 p-md-4">
+      <label for="tarea">Tarea Interrumpida</label>
+      <p-dropdown 
+        [options]="tareas" 
+        optionLabel="descripcion" 
+        placeholder="Seleccione una tarea"
+        [(ngModel)]="interrupcion.tareaId" 
+        inputId="tarea">
+      </p-dropdown>
+    </div>
+
+    <div class="p-field p-col-12 p-md-4">
+      <label for="duracion">Duración (minutos)</label>
+      <input 
+        id="duracion" 
+        type="number" 
+        pInputText 
+        [(ngModel)]="interrupcion.duracion" />
+    </div>
+
+    <div class="p-field p-col-12 p-md-4">
+      <label for="motivo">Motivo</label>
+      <textarea 
+        pInputTextarea 
+        [(ngModel)]="interrupcion.motivo" 
+        rows="3"
+        class="p-inputtext">
+      </textarea>
+    </div>
+
+    <div class="p-col-12 text-right">
+      <button 
+        pButton 
+        type="button" 
+        icon="pi pi-ban" 
+        label="Registrar" 
+        class="p-button-rounded p-button-danger" 
+        (click)="registrar()">
+      </button>
+    </div>
+  </div>
+</p-card>

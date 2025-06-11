@@ -1,0 +1,49 @@
+<p-card styleClass="form-card">
+  <ng-template pTemplate="header">
+    <div class="form-header">🕒 Registro de Tiempo Real</div>
+  </ng-template>
+
+  <div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col-12 p-md-4">
+      <label for="tarea">Tarea</label>
+      <p-dropdown 
+        [options]="tareas" 
+        optionLabel="descripcion" 
+        placeholder="Seleccione una tarea" 
+        [(ngModel)]="registro.tareaId" 
+        inputId="tarea">
+      </p-dropdown>
+    </div>
+
+    <div class="p-field p-col-12 p-md-4">
+      <label for="duracion">Duración (minutos)</label>
+      <input 
+        id="duracion" 
+        type="number" 
+        pInputText 
+        [(ngModel)]="registro.duracion" />
+    </div>
+
+    <div class="p-field p-col-12 p-md-4">
+      <label for="usuario">Usuario</label>
+      <p-dropdown 
+        [options]="usuarios" 
+        optionLabel="nombre" 
+        placeholder="Seleccione un usuario" 
+        [(ngModel)]="registro.usuarioId" 
+        inputId="usuario">
+      </p-dropdown>
+    </div>
+
+    <div class="p-col-12 text-right">
+      <button 
+        pButton 
+        type="button" 
+        icon="pi pi-save" 
+        label="Guardar" 
+        class="p-button-rounded p-button-success" 
+        (click)="guardar()">
+      </button>
+    </div>
+  </div>
+</p-card>
