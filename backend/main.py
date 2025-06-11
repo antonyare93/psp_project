@@ -12,5 +12,7 @@ def get_users(
     Entrega una lista de usuarios con paginacion y todas sus propiedades
     """
     # Pendiente de implementar
-    return {"message": "Hello World"}
-
+    return {"message": "hola"}
+    from fastapi import FastAPI
+app = FastAPI()
+@app.get("/usuarios")def get_usuarios():    return {"usuarios": ["Antony", "andres", "marco", "sergio"]}
