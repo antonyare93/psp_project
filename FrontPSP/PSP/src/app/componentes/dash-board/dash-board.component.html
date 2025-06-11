@@ -1,0 +1,15 @@
+<div class="p-grid p-nogutter p-4 dashboard-container">
+  @for (item of dashboardItems; track $index) {
+    <div class="p-col-12 p-md-6 p-lg-4">
+      <p-card class="dashboard-card" (click)="navigateTo(item.route)">
+        <ng-template pTemplate="header">
+          <div class="card-header">
+            <i class="{{ item.icon }} card-icon"></i>
+            <span class="card-title">{{ item.title }}</span>
+          </div>
+        </ng-template>
+        <p class="card-description">{{ item.description }}</p>
+      </p-card>
+    </div>
+  }
+</div>

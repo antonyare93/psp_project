@@ -1,0 +1,18 @@
+<p-card header="Scripts Registrados">
+  <p-table [value]="scripts">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Descripción</th>
+        <th>Etapa</th>
+        <th>Usuario</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-script>
+      <tr>
+        <td>{{ script.descripcion }}</td>
+        <td>{{ script.etapa }}</td>
+        <td>{{ script.usuario }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</p-card>

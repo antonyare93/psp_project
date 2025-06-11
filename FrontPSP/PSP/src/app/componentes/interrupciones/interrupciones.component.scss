@@ -1,0 +1,50 @@
+::ng-deep .form-card {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #1e1e1e;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px #00000050;
+}
+
+::ng-deep .p-card .p-card-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+::ng-deep .p-field {
+  margin-bottom: 1.5rem;
+}
+
+::ng-deep label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+  font-weight: 500;
+}
+
+::ng-deep .p-inputtext,
+::ng-deep .p-dropdown,
+::ng-deep textarea {
+  width: 100%;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-radius: 0.5rem;
+  border: 1px solid #444;
+  padding: 0.75rem;
+}
+
+::ng-deep textarea {
+  resize: vertical;
+}
+
+::ng-deep .p-button-danger {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+::ng-deep textarea.p-inputtext {
+  resize: vertical;
+  min-height: 120px;
+}

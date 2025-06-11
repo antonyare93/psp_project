@@ -1,0 +1,27 @@
+<div class="layout-wrapper">
+  <p-menubar>
+  <ng-template pTemplate="start">
+    <button 
+      pButton 
+      icon="pi pi-home" 
+      class="p-button-text p-button-rounded p-button-sm" 
+      (click)="irADashboard()"
+      style="margin-right: 1rem;">
+    </button>
+  </ng-template>
+
+  <ng-template pTemplate="end">
+    <p-dropdown 
+      [options]="usuarios" 
+      [(ngModel)]="selectedUser" 
+      optionLabel="nombre"
+      placeholder="Seleccionar usuario" 
+      (onChange)="onUsuarioChange()">
+    </p-dropdown>
+  </ng-template>
+</p-menubar>
+
+    <div class="layout-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

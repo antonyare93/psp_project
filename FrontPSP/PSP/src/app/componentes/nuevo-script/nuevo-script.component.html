@@ -1,0 +1,49 @@
+<p-card styleClass="form-card">
+  <ng-template pTemplate="header">
+    <div class="form-header">📄 Nuevo Script de Desarrollo</div>
+  </ng-template>
+
+  <div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col-12 p-md-4">
+      <label for="descripcion">Descripción</label>
+      <input 
+        id="descripcion" 
+        type="text" 
+        pInputText 
+        [(ngModel)]="script.descripcion" />
+    </div>
+
+    <div class="p-field p-col-12 p-md-4">
+      <label for="etapa">Etapa (Fase PSP)</label>
+      <p-dropdown 
+        [options]="etapas" 
+        optionLabel="nombre" 
+        placeholder="Seleccione una etapa"
+        [(ngModel)]="script.etapaId" 
+        inputId="etapa">
+      </p-dropdown>
+    </div>
+
+    <div class="p-field p-col-12 p-md-4">
+      <label for="usuario">Usuario</label>
+      <p-dropdown 
+        [options]="usuarios" 
+        optionLabel="nombre" 
+        placeholder="Seleccione un usuario"
+        [(ngModel)]="script.usuarioId" 
+        inputId="usuario">
+      </p-dropdown>
+    </div>
+
+    <div class="p-col-12 text-right">
+      <button 
+        pButton 
+        type="button" 
+        icon="pi pi-save" 
+        label="Guardar Script" 
+        class="p-button-rounded p-button-success" 
+        (click)="guardar()">
+      </button>
+    </div>
+  </div>
+</p-card>
